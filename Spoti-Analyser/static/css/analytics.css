@@ -1,0 +1,93 @@
+.user-profile{
+    position: absolute;
+    top:20%;
+    width: 100%;
+    text-align: center;
+}
+#time-selector{
+    margin: 0px 120px 60px 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+#time-selector a{
+    margin:0px 13px 13px 13px;
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+    font-size: 16px;
+    opacity: 80%;
+}
+.title{
+    text-align: center;
+    margin-bottom: 15px;
+    color: ghostwhite;
+    font-size: 23px;
+}
+.chart-container {
+    position: relative;
+    margin: auto;
+}
+.radar{
+    height: 60vh;
+    width: 100%;
+}
+.popularity{
+    width: 75%;
+    height:50vh;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+.facts{
+    margin-top: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.fact{
+    color: #1DB954;
+    font-size: 18px;
+    margin:10px;
+}
+.g{
+    border: 0.5px solid ghostwhite;
+    padding: 10px 20px 10px 20px;
+}
+.g:hover{
+    background-color: ghostwhite;
+}
+.group{
+    display: flex;
+}
+.similarity-scores{
+    margin-bottom: 80px;
+}
+.s{
+    margin: 10px 20px 50px 20px;
+    border: 0.5px solid ghostwhite;
+    border-radius: 200px;
+    padding: 20px;
+}
+hr{
+    border: 0.5px solid ghostwhite;
+    opacity: 0.7;
+    margin: 60px 0px 60px 0px;
+}
+.caption{
+    color: rgb(175, 175, 175);
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+@media (max-width: 450px){
+    .group{
+        flex-direction: column;
+    }
+    #time-selector{
+        justify-content: center;
+        margin: 20px 0px 30px 0px;
+    }
+    .caption{
+        width: 60%;
+    }
+}
+

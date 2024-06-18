@@ -1,0 +1,58 @@
+.yur {
+    position: absolute;
+    top:27%;
+    width: 100%;
+    text-align: center;
+}
+.facts{
+    margin-top: 35px;
+    color: rgb(175, 175, 175);
+    font-size: 14px;
+    opacity: 80%;
+    display: flex;
+    justify-content: center;
+}
+.title{
+    color:ghostwhite;
+    font-size: 35px;
+    margin: 100px 0px 30px 0px;
+}
+.artist-title{
+    margin: 15px;
+}
+.group{
+    margin: 0px 25px 0px 25px;
+}
+.fact{
+    color: #1DB954;
+}
+.graph {
+    width: 70%;
+    height:50vh;
+    margin: 0px auto;
+    margin-bottom: 40px;
+}
+.a {
+    margin-bottom: 30px;
+}
+.ref{
+    margin-bottom: 50px;
+}
+.ref a{
+    text-decoration: none;
+    color: rgb(175, 175, 175);
+    opacity: 80%;
+    font-size: 14px;
+}
+.sentiment{
+    margin-top: 100px;
+    color: rgb(175, 175, 175);
+    font-size: 15px;
+}
+.sentiment p{
+    text-align: left;
+    margin: 100px 15% 60px 15%;
+}
+.sentiment span{
+    color:#1DB954;
+}

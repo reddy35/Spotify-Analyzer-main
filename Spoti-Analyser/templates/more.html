@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/more.css')}}">
+{% endblock %}
+
+{% block nav %}
+    <script>document.getElementById('music').className = 'line'</script>
+{% endblock %}
+
+{% block content %}
+    <div id="more-top">
+        <div id="time-selector">
+            <a href="/change-time/short_termM"><h4 id="short">Recent</h4></a>
+            <a href="/change-time/medium_termM"><h4 id="medium">6 Months</h4></a>
+            <a href="/change-time/long_termM"><h4 id="long">All Time</h4></a>
+            {% if time == "short_term" %}
+                <style>#short{color: #1DB954}</style>
+            {% elif time == "medium_term" %}
+                <style>#medium{color: #1DB954}</style>
+            {% else %}
+                <style>#long{color: #1DB954}</style>
+            {% endif %}
+        </div>
+        <div id="type">
+            <div id="more-artists">
+                <div class="top-title">
+                    <h3>Top Artists</h3>
+                    <span class="info">(click the artists for their stats)</span>
+                </div>
+                <div class="top-type">
+                    {% for cover, name, id in zip(artist_covers, artists, artist_ids) %}
+                        {% if id != '' %}
+                            <a href="info/{{id}}A">
+                                <img src="{{cover}}" title="{{name}}" width="250" height="250"/>
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div id="more-tracks">
+                <div class="top-title">
+                    <h3>Top Tracks</h3>
+                    <span class="info">(click the songs for their stats/audio features)</span>
+                </div>
+                <div class="top-type">
+                    <div class="card">
+                        {% for name, cover,id in zip(songs, song_covers, song_ids) %}
+                            {% if id != '' %}
+                                <a href="/info/{{id}}T">
+                                    <div class="card-body">
+                                        <h3 >{{name}}</h3>
+                                        <img src="{{cover}}" title="{{name}}"width="250" height="250"/>
+                                    </div>
+                                </a>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

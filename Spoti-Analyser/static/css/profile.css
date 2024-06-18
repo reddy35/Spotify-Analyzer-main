@@ -1,0 +1,65 @@
+#profile{
+    position: absolute;
+    top:23%;
+    width:100%;
+    margin: auto;
+    text-align: center;
+}
+h1{
+    color:ghostwhite;
+    text-decoration: none;
+}
+main img{
+    margin: 35px 0px 35px 0px;
+    border-radius: 200px;
+    width: 240px;
+    height: 240px;
+}
+#logout{
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#logout a{
+    text-decoration: none;
+    padding: 10px 15px 10px 15px;
+    color: ghostwhite;
+    border: 0.8px solid ghostwhite;
+    border-radius: 200px;
+}
+#user-info{
+    display: flex;
+    justify-content: center;
+}
+.info{
+    margin: 10px;
+}
+.info h5{
+    color: #1DB954;
+    margin-bottom: 10px;
+    font-size:18px;
+}
+.info h6{
+    color: rgb(175, 175, 175);
+    font-size: 14px;
+    opacity: 80%;
+}
+@media screen and (max-width: 370px){
+    main img{
+        width: 180px;
+        height: 180px;
+    }
+}
+@media screen and (max-height: 600px){
+    #logout{
+        top: 100%;
+    }
+}
+@media (min-height: 900px){
+    main img{
+        width: 320px;
+        height: 320px;
+    }
+}
