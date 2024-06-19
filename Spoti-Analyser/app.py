@@ -227,7 +227,7 @@ def new():
     artist_ids = get_recommended_artists_info['id']
     artist_images = get_recommended_artists_info['image']
 
-    #user created recommendations
+    
     if request.method == "POST":
         
         user_inputed_popularity = int(request.form['pop'])
